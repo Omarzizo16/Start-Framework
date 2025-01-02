@@ -1,0 +1,10 @@
+.active:focus, .show:focus {
+  background-color: #1abc9c !important;
+  border-radius: 0.5rem;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.text-white {
+  --bs-text-opacity: $opacity;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}/*# sourceMappingURL=App.css.map */

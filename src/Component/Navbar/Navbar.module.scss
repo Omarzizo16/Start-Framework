@@ -1,0 +1,20 @@
+$second-color: #2C3E50;
+$main-color: #0DCAF0;
+.navbarBackGround{
+    background-color: $second-color;
+    padding: 1rem 0 !important;
+    transition: padding 0.3s linear;
+}
+
+.minimized {
+    background-color: $second-color;
+    padding: 0.25rem 0 !important; // Minimized padding (py-1)
+}
+.activ{
+    background-color: $main-color !important;
+    border-radius: 0.5rem;
+    width:fit-content;
+}
+.wFC{
+    width: fit-content;
+}

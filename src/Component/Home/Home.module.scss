@@ -1,0 +1,15 @@
+.home {
+    img {
+      width: 23%;
+      transition: 0.5s;
+      &:hover{
+        transform: scale(1.2);
+}
+    }
+    .line {
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      margin: 0 10px;
+    }
+  }

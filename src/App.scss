@@ -1,0 +1,50 @@
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  border-left: 2px solid transparent;
+  box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 0px #7473738c inset;
+  border-radius: 100vh;
+}
+$main-color: #0DCAF0;
+$second-color: #2C3E50;
+.navbar{
+  transition: all 0.3s linear;
+}
+.nav-link{
+    &:hover,&:focus{
+  background-color: $main-color !important;
+  border-radius:0.5rem ;
+  width:fit-content;
+  transition: color .5s ease-in-out,   background-color .5s ease-in-out,  border-color .5s ease-in-out;
+}
+}
+
+@mixin text-color($color-variable, $opacity: 1) {
+  --bs-text-opacity: $opacity;
+  color: rgba(var($color-variable), var(--bs-text-opacity)) !important;
+}
+.text-white {
+  @include text-color(--bs-white-rgb);
+}
+.vh80{
+  min-height: 80vh !important;
+}
+
+@mixin line($bg-color) {
+  width: 80px;
+  height: 4px;
+  background-color: $bg-color;
+  margin: 0 10px;
+}
+
+.line {
+  @include line(#fff);
+}
+
+.lineBlue {
+  @include line(#2C3E50);
+}

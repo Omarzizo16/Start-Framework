@@ -1,0 +1,33 @@
+.footer {
+  background-color: #2c3e50;
+  text-align: center;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social-icons i {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.footer .social-icons i:hover {
+  background-color: white;
+  color: #2c3e50;
+}
+.footer .footer-bottom {
+  background-color: #1A252F;
+  padding: 1rem 0;
+}
+.footer .footer-bottom p {
+  margin: 0;
+}/*# sourceMappingURL=Footer.module.css.map */

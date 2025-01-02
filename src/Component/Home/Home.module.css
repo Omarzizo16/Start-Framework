@@ -1,0 +1,9 @@
+.home img {
+  width: 23%;
+}
+.home .line {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  margin: 0 10px;
+}/*# sourceMappingURL=Home.module.css.map */

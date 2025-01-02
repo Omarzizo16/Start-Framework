@@ -1,0 +1,67 @@
+$second-color: #2C3E50;
+$main-color: #0DCAF0;
+$transition-duration: 0.3s;
+
+.tColor {
+    color: $second-color;
+  }
+.contact {
+  .textPrimary {
+    color: $second-color;
+  }
+
+  .formFloating {
+    position: relative;
+
+    input {
+      height: 50px;
+      background: transparent;
+      transition: border-color $transition-duration;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:focus {
+        box-shadow: none;
+        border-color: $second-color;
+        background: transparent;
+      }
+      &:-webkit-autofill {
+        box-shadow: 0 0 0 30px white inset;
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 1rem 0;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity $transition-duration ease-in-out,
+                  transform $transition-duration ease-in-out,
+                  color $transition-duration ease-in-out;
+      color: rgba($second-color, 0.7);
+    }
+
+    input:focus ~ label,
+    input:not(:placeholder-shown) ~ label {
+      transform: scale(0.85) translateY(-2rem);
+      color: $main-color;
+    }
+  }
+
+  .btn-outline-info {
+    border-color: $second-color;
+    color: $second-color;
+    
+    &:hover, &:focus {
+      background-color: $second-color;
+      border-color: $second-color;
+      color: white;
+    }
+  }
+}
