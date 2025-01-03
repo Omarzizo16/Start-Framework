@@ -62,7 +62,7 @@ export default function Contact() {
               </div>
 
               <div className="text-center">
-                <button type="submit" className="btn btn-outline-info px-5 py-2">
+                <button type="button" className="btn btn-outline-info px-5 py-2">
                   Submit
                 </button>
               </div>
