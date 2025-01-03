@@ -11,12 +11,13 @@ import Err from './Component/Err/Err'
 let routers =  createBrowserRouter([
   {path:'' , element:<Layout />, children:[
     {index:true , element:<Home />},
+    {path:'*' , element:<Err />},
     {path:'Home' , element:<Home />},
     {path:'Start-Framework/' , element:<Home />},
     {path:'About' , element:<About />},
     {path:'Portfolio' , element:<Portfolio />},
     {path:'Contact' , element:<Contact />},
-    {path:'*' , element:<Err />},
+    {path:'Contact?' , element:<Contact />},
   ]
 }
 ])
